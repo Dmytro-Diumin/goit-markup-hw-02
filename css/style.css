@@ -1,5 +1,58 @@
+:root {
+    --secondary-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
 body {
-    font-family: 'Roboto';
-    color: #212121;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.header-content,
+.footer-content {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.web-content {
+    color: #2196F3;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.header-link {
+    font-style: normal;
     font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.header-contact a {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
 }
