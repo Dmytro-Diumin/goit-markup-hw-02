@@ -1,5 +1,6 @@
 :root {
     --secondary-text-color: #212121;
+    --secondary-bcg-color: #F5F5F5;
     --accent-color: #2196F3;
 }
 
@@ -68,7 +69,7 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -91,8 +92,22 @@ body {
 
 /* особливості */
 
-.features {
-    background-color: #F5F5F5;
+.features,
+.classes {
+    color: var(--secondary-bcg-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .features-title {
@@ -103,7 +118,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 .features-text {
@@ -116,4 +131,72 @@ body {
     color: #757575;
 }
 
-/* Чим ми займаємося */
+/* чим ми займаємося */
+
+.classes-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+/* наша команда */
+
+.team-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color)
+}
+
+.our-team {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color)
+}
+
+.text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* footer */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-item a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-items a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
