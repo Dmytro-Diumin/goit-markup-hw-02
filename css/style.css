@@ -16,6 +16,8 @@ body {
     text-decoration: none;
 }
 
+/* header */
+
 .header {
     background-color: #ffffff;
     text-decoration: none;
@@ -34,7 +36,7 @@ body {
 }
 
 .web-content {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .link:hover,
@@ -56,3 +58,62 @@ body {
     letter-spacing: 0.02em;
     color: #757575;
 }
+
+/* main */
+
+.hero-title,
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #2F303A;
+}
+
+.hero-btn, .button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+/* особливості */
+
+.features {
+    background-color: #F5F5F5;
+}
+
+.features-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.features-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* Чим ми займаємося */
