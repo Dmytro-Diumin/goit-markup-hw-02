@@ -2,11 +2,13 @@
     --secondary-text-color: #212121;
     --secondary-bcg-color: #F5F5F5;
     --accent-color: #2196F3;
+    --secondary-white-color: #ffffff;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    letter-spacing: 0.03em;
 }
 
 .list {
@@ -20,18 +22,16 @@ body {
 /* header */
 
 .header {
-    background-color: #ffffff;
+    background-color: var(--secondary-white-color);
     text-decoration: none;
 }
 
 .header-content,
 .footer-content {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
+    line-height: 1.1;
     color: #000000;
     text-decoration: none;
 }
@@ -46,16 +46,15 @@ body {
 }
 
 .header-link {
-    font-style: normal;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 }
 
 .header-contact a {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: #757575;
 }
@@ -64,30 +63,25 @@ body {
 
 .hero-title,
 .title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-    /* text-align: center; */
+    line-height: 1.3;
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--secondary-white-color);
     background-color: #2F303A;
 }
 
-.hero-btn, .button{
-    font-family: 'Roboto';
-    font-style: normal;
+.hero-btn {
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1.8;
     letter-spacing: 0.06em;
     background-color: #2196F3;
-    color: #FFFFFF;
+    color: var(--secondary-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 /* особливості */
@@ -111,71 +105,58 @@ body {
 }
 
 .features-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1.1;
     text-transform: uppercase;
     color: var(--secondary-text-color);
 }
 
 .features-text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1.7;
     color: #757575;
 }
 
 /* чим ми займаємося */
 
 .classes-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
-    /* text-align: center; */
-    letter-spacing: 0.03em;
+    line-height: 1.1;
+    text-align: center;
     color: var(--secondary-text-color);
 }
 
 /* наша команда */
 
+.team {
+    background-color: #F5F4FA;
+}
+
 .team-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
-    /* text-align: center; */
-    letter-spacing: 0.03em;
+    line-height: 1.1;
+    text-align: center;
     color: var(--secondary-text-color)
 }
 
 .our-team {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    /* text-align: center; */
-    letter-spacing: 0.03em;
+    line-height: 1.1;
     color: var(--secondary-text-color)
 }
 
+.team-item {
+    background-color: var(--secondary-white-color);
+}
+
 .text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    /* text-align: center; */
-    letter-spacing: 0.03em;
+    line-height: 1.1;
     color: #757575;
 }
 
@@ -186,17 +167,49 @@ body {
 }
 
 .footer-item a {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1.7;
     text-decoration: none;
-    color: #FFFFFF;
+    color:var(--secondary-white-color);
 }
 
 .footer-items a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
+
+/* портфоліо */
+
+.button-list {
+    color: var(--secondary-bcg-color);
+    list-style: none;
+}
+
+
+.button-item {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--secondary-text-color);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-white-color);
+}
+
+.btn:focus {
+    color: var(--secondary-white-color);
+    background-color: var(--accent-color);
+}
+
+.work-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color)
+}
+
+
