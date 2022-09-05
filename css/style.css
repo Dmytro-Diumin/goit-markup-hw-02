@@ -5,7 +5,7 @@
     --secondary-white-color: #ffffff;
 }
 
-body {
+.body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     letter-spacing: 0.03em;
@@ -26,8 +26,7 @@ body {
     text-decoration: none;
 }
 
-.header-content,
-.footer-content {
+.header-content {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -45,7 +44,11 @@ body {
     color: var(--accent-color);
 }
 
-.header-link {
+.link.current {
+    color: var(--accent-color);
+}
+
+.link{
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -74,6 +77,7 @@ body {
 }
 
 .hero-btn {
+    border: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -83,6 +87,10 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
+
+.pointer {
+    cursor: pointer;
+  }
 
 /* особливості */
 
@@ -162,11 +170,27 @@ body {
 
 /* footer */
 
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
 .footer {
     background-color: #2F303A;
 }
 
-.footer-item a {
+.footer-content {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1;
+    color: var(--secondary-white-color);
+    text-decoration: none;
+}
+
+.address {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -174,9 +198,10 @@ body {
     color:var(--secondary-white-color);
 }
 
-.footer-items a {
+.contact {
+    font-style: normal;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--secondary-white-color)
 }
 
 /* портфоліо */
@@ -194,14 +219,15 @@ body {
     border-radius: 4px;
 }
 
-.btn:hover {
-    color: var(--secondary-text-color);
-    background-color: var(--secondary-white-color);
-}
-
-.btn:focus {
+.btn:hover,
+.btn:focus  {
     color: var(--secondary-white-color);
     background-color: var(--accent-color);
+    border: none;
+}
+
+.btn {
+    border: none;
 }
 
 .work-title {
