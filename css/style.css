@@ -15,10 +15,6 @@
   list-style: none;
 }
 
-.link {
-  text-decoration: none;
-}
-
 /* header */
 
 .header {
@@ -57,6 +53,7 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  text-decoration: none;
 }
 
 .contact {
