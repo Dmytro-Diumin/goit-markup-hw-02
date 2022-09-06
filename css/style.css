@@ -26,6 +26,10 @@
   text-decoration: none;
 }
 
+.header-item {
+    font-weight: 500;
+}
+
 .header-content {
   font-family: 'Raleway';
   font-weight: 700;
@@ -56,6 +60,7 @@
 }
 
 .contact {
+  font-weight: 400;
   color: #757575;
   font-style: normal;
   text-decoration: none;
