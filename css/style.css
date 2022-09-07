@@ -22,7 +22,7 @@
   text-decoration: none;
 }
 
-.header-item {
+.header-item a {
     font-weight: 500;
 }
 
